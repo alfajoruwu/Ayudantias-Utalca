@@ -1,0 +1,19 @@
+# Utiliza la imagen base de Node.js
+FROM node:20.11
+
+# Establece el directorio de trabajo en /app
+WORKDIR /app
+
+# Copia el archivo package.json e instala las dependencias
+COPY package.json .
+COPY package-lock.json .
+RUN npm install
+
+# Copia el resto de los archivos del proyecto al contenedor
+COPY . .
+
+# Expone el puerto 3000 para la aplicación React
+EXPOSE 3000
+
+# Inicia la aplicación React cuando se inicie el contenedor
+CMD ["npm", "start"]

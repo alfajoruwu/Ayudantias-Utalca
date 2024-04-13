@@ -1,0 +1,30 @@
+.color-btn{
+    background-color: #1ECCCC !important;
+    color: white !important;
+    margin: 0.5rem;
+    width: 9.5rem; /* Ancho del botón */
+    height: 3rem;
+    font-size: 1rem;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; 
+    border-color:#1ECCCC !important;
+}
+
+
+
+
+
+
+.tam-2{
+    width: 8rem; /* Ancho del botón */
+    height: 3rem;
+}
+
+.color-btn:hover{
+    background-color: #1ba5a5 !important;
+    color: white !important;
+    border-color:#1ba5a5 !important;
+}
+
+
