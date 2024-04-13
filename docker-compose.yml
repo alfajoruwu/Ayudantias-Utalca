@@ -6,7 +6,7 @@ services:
     depends_on: 
       - mysql
     build:
-      context: ./Inventarioapi   
+      context: ./Fastapiback  
       dockerfile: dockerfile     
     ports:
       - "80:80"                  
@@ -16,7 +16,7 @@ services:
 
   inventariofront:
     build:
-      context: ./inventariofront  
+      context: ./Reactfront  
       dockerfile: dockerfile        
     ports:
       - "3000:3000"                 
