@@ -1,30 +1,29 @@
-//React
-import { useContext,React } from 'react';
-import { NavLink } from 'react-router-dom';
+// React
+import { React } from 'react'
 
-//estilos
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+// estilos
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 import '../../index.css'
 
-//variables glovales
-import { DataContext } from '../../Datos/DataContext';
+// variables glovales
+import { DataContext } from '../../Datos/DataContext'
 
-//componentes
+// componentes
 
-import Navbar from '../../Componentes/navbar/NavbarMarcela';
-import Ejemplo from '../../Componentes/Ejemplo/Ejemplo';
+import Navbar from '../../Componentes/navbar/NavbarMarcela'
+import Ejemplo from '../../Componentes/Ejemplo/Ejemplo'
 
-function App() {
-
+function App () {
   return (
-    <>
-    <div class="principal">
-      <Navbar />
-      <Ejemplo/>
-    </div>
-    </>
-  );
+    console.log('Dato de la variable global: ', DataContext.Variablerandom),
+      <>
+        <div className='principal'>
+          <Navbar />
+          <Ejemplo />
+        </div>
+      </>
+  )
 }
 
-export default App;
+export default App
